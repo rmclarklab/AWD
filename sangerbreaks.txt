@@ -1,0 +1,13 @@
+# out_scaffold	in_scaffold	direction	beg	end
+scaffold_1.1	scaffold_1	f	b	4745098
+scaffold_1.2	scaffold_1	f	4745099	e
+scaffold_2.1	scaffold_2	f	b	3099738
+scaffold_2.2	scaffold_2	f	3099739	e
+scaffold_3	scaffold_3	f	b	e
+scaffold_4.1	scaffold_4	f	b	1509718
+scaffold_4.2	scaffold_4	f	1509719	e
+scaffold_5	scaffold_5	f	b	e
+scaffold_6	scaffold_6	f	b	e
+scaffold_7	scaffold_7	f	b	e
+scaffold_8.1	scaffold_8	f	b	767977
+scaffold_8.2	scaffold_8	f	767978	e
