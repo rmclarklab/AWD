@@ -1,6 +1,6 @@
 ## AWD: Construction of superscaffolds using population allele frequency data. 
 
-This set of python scripts link genomic scaffolds into super scaffolds using the average window distance (AWD) metric. 
+This set of python scripts links genomic scaffolds into super scaffolds using the average window distance (AWD) metric. 
 
 ---
 
@@ -12,7 +12,7 @@ Make sure version 2.7 of [python](https://www.python.org/download/releases/2.7/)
 
 ### Analysis from Wybouw et. al. 2019.
 
-Download and unzip. Make the folder the working directory in command line. In addition to the scripts, make sure the working directory contains (1) Reference genome assembly in FASTA format, (2) VCF file with variant predictions, (3) a file that includes information on potential misassemblies (`sangerbreaks.txt` in this case). 
+Download and unzip. Make the folder the working directory in command line. In addition to the scripts, make sure the working directory contains (1) Reference genome assembly in FASTA format (download from FILL THIS IN), (2) VCF file with variant predictions (download from FILL THIS IN), (3) a file that includes information on potential misassemblies (`sangerbreaks.txt` in this case). 
 ```
 cd Desktop/AWD-master/
 ```
