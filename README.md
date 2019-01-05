@@ -10,9 +10,9 @@ Make sure version 2.7 of [python](https://www.python.org/download/releases/2.7/)
 
 ---
 
-### Analysis from Wybouw et. al. 2019.
+### Analysis for Wybouw et. al. 2019.
 
-Download and unzip. Make the folder the working directory in command line. In addition to the scripts, make sure the working directory contains (1) Reference genome assembly in FASTA format (download from FILL THIS IN), (2) VCF file with variant predictions (download from FILL THIS IN), (3) a file that includes information on potential misassemblies (`sangerbreaks.txt` in this case). 
+Download and make this folder the working directory in command line. In addition to the scripts, make sure the working directory contains (1) reference genome assembly in FASTA format (download from FILL THIS IN), (2) VCF file with variant predictions (download from FILL THIS IN), (3) a file that includes information on potential misassemblies (`sangerbreaks.txt` in this case). 
 ```
 cd Desktop/AWD-master/
 ```
@@ -20,7 +20,7 @@ Run the master shell script.
 ```
 ./master_script.sh
 ```
-If the permission is denied, then make the script executable using command line. 
+If the permission is denied, make the script executable. 
 ```
 chmod a+x master_script.sh
 ```
@@ -65,7 +65,7 @@ Control of the filters and calculations is through the following arguments:
 - -e / --end_scaffold
 - -n / --no_call_scaffold
 
-An example of this command line is given in `window_mapping_commands.sh`
+Examples of this command line are given in `window_mapping_commands.sh`
 
 #### AWD calculations and super scaffold map construction 
 
