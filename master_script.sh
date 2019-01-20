@@ -3,7 +3,8 @@ python2 coordinate_code.py -f T_urticae_2009.09.28.fasta -i sangerbreaks.txt -v 
 echo "VCF transformed"
 mkdir -p -- "Output_files/window_mapping"
 echo "starting allele frequency calculations for each sample"
-parallel -j 2 < window_mapping_commands.sh
+chmod a+x window_mapping_commands.sh
+./window_mapping_commands.sh
 echo "finished allele frequency calculations"
 echo "building matrix"
 python2 map_concatenate.py Output_files/window_mapping/*
