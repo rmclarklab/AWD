@@ -12,7 +12,12 @@ Make sure version 2.7 of [python](https://www.python.org/download/releases/2.7/)
 
 ### Analysis for Wybouw et. al. 2019.
 
-Download and make this folder the working directory in command line. In addition to the scripts, make sure the working directory contains (1) reference genome assembly in FASTA format (download from FILL THIS IN), (2) VCF file with variant predictions (download from FILL THIS IN), (3) a file that includes information on potential misassemblies (`sangerbreaks.txt` in this case). 
+Download and make the resulting folder the working directory. In addition to the program files in this repository, ensure that the working directory contains (1) a reference genome assembly in FASTA format, (2) variant calls for parents of a cross and the segregating population data (as a VCF file), and (3) a file that includes information on potential misassemblies. 
+
+The code was designed for and validated with draft Sanger genome sequence of the two-spotted spider mite (*Tetranychus urticae*) and replicated experimental population data, and the output is an ordered concatenation of Sanger scaffolds into superscaffolds. 
+
+Specifically, the draft genome sequence for *T. urticae* can be downloaded as described in [Grbic *et. al.* (2011)](https://www.nature.com/articles/nature10640). The VCF file can be dowloaded from this [link](https://doi.org/10.1101/474064) in the preprint that describes the study for which this software was developed. A file that includes potential misassemblies in the draft Sanger assembly of *T. urticae* is provided in this repository (`sangerbreaks.txt`). Please see the [preprint](https://doi.org/10.1101/474064) for additional information. 
+
 ```
 cd Desktop/AWD-master/
 ```
