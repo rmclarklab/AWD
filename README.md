@@ -1,6 +1,14 @@
 ## AWD: Construction of superscaffolds using population allele frequency data. 
 
-This set of python scripts links genomic scaffolds into super scaffolds using the average window distance (AWD) metric. 
+This collection of python programs links genomic scaffolds in draft genome sequences together to form superscaffolds using the average window distance (AWD) metric. This metric, and its use for joining together scaffolds in the draft genome sequence of the two-spotted spider mite (*Tetranychus urticae*) to produce three pseudochromosomes, is described in the following publication:
+
+- Wybouw, N., Kosterlitz, O., Kurlovs, A. H., Bajda, S., Greenhalgh, R., Snoeck, S., Bui, H., Bryon, A., Dermauw, W., Van Leeuwen, T., and Clark, R. M. 2019. Long-term population studies uncover the genome structure and genetic basis of xenobiotic and host plant adaptation in the herbivore *Tetranychus urticae*. Under review (for a preprint, see bioRxiv 474064; doi: https://doi.org/10.1101/474064)
+
+The collection of programs, and associated documentation, used to produce Table S4 and Table S5 in Wyboux et al. (2019) are provided (the instructions for how to use the software to generate Table S4 is given below). Although the programs were written for and tested on draft genome sequences from *T. urticae*, in concerte with population allele frequency data generated as part of the Wyboux et al. (2019) study, they were designed to work for related genome projects for which comparable data sets and input files are available.
+
+For the data sets needed to test installation, and to replicate Table S4, please contact Richard Clark (richard.m.clark@utah.edu). The data sets used as input will be available for public download as soon as the manuscript is accepted and appears online.
+
+The assembler.py program was written by Olivia Kosterlitz. She is currently a graduate student at the University of Washington (livkost@uw.edu). Please contact either Olivia Kosterlitz or Richard Clark (University of Utah, richard.m.clark@utah.edu) with questions about the software.
 
 ---
 
