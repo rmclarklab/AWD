@@ -6,7 +6,9 @@ This collection of python programs links genomic scaffolds in draft genome seque
 
 The collection of programs, and associated documentation, used to produce Table S4 and Table S5 in Wyboux et al. (2019) are provided (the instructions for how to use the software to generate Table S4 is given below). Although the programs were written for and tested on draft genome sequences from *T. urticae*, in concerte with population allele frequency data generated as part of the Wyboux et al. (2019) study, they were designed to work for related genome projects for which comparable data sets and input files are available.
 
-For the data sets needed to test installation, and to replicate Table S4, please contact Richard Clark (richard.m.clark@utah.edu). The data sets used as input will be available for public download as soon as the manuscript is accepted and appears online.
+An overview about the AWD method and its use for consolidating draft genome assemblies is given below; however, in Wybouw et al. (2019) please see Materials and Methods sections "*Identification of misassembled regions in Sanger scaffolds*" and "*Construction of superscaffolds with population allele frequency data*" for all details.
+
+For the data sets needed to test installation, and to replicate Table S4 of Wybouw et al. (2019), please contact Richard Clark (richard.m.clark@utah.edu). The data sets used as input will be available for public download as soon as the manuscript is accepted and appears online.
 
 The assembler.py program was written by Olivia Kosterlitz. She is currently a graduate student at the University of Washington (livkost@uw.edu). Please contact either Olivia Kosterlitz or Richard Clark (University of Utah, richard.m.clark@utah.edu) with questions about the software.
 
@@ -80,7 +82,7 @@ Control of the filters and calculations is through the following arguments:
 
 Examples of this command line are given in `window_mapping_commands.sh`
 
-#### AWD calculations and super scaffold map construction 
+#### AWD calculations and super scaffold map construction (additional details)
 
 Using `map_concatenate.py`, the average window distance (AWD) is calculated for every possible scaffold end pairing. To calculate an AWD, we (1) determine the window's allele frequency (previous script), (2) calculate the absolute value of the difference in the two frequency values between two non-overlapping windows on a per sample basis, and (3) average the resulting values across all samples. For genome construction, we (1) calculate allele frequency for only the terminal windows of each scaffold, (2) calculate AWD for all possible scaffold end pairings. For each scaffold end, a list is produced with all non-self AWD comparisons containing the scaffold end and sorted in ascending order. The five smallest AWD comparisons are retained for downstream scripts. Using `mapmatrix_build.py`, reciprical smallest AWD values matches two scaffold ends together. When this occurs, the scaffold ends are removed from the lists and excluded from the remaining rounds of matching. This process is iterative until there are no more rankings to compare. The remaining unmatched scaffold ends are used as chromosome end anchors in `genome_build.py`, which constructs the final superscaffold map by placing and ordering scaffolds according to the catalog of repicricol best hits. 
 
