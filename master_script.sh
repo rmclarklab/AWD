@@ -1,5 +1,5 @@
 echo "Transforming VCF"
-python2 coordinate_code.py -f T_urticae_2009.09.28.fasta -i sangerbreaks.txt -v File_S1.vcf 
+python2 coordinate_code.py -f T_urticae_2009.09.28.fasta -i sangerbreaks.txt -v Tomato_Spirodiclofen_Joint.3.6-0-g89b7209.vcf 
 echo "VCF transformed"
 mkdir -p -- "Output_files/window_mapping"
 echo "starting allele frequency calculations for each sample"
