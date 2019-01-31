@@ -26,7 +26,7 @@ Download and make the resulting folder the working directory. In addition to the
 
 The code was designed for and validated with draft Sanger genome sequence of the two-spotted spider mite (*Tetranychus urticae*) and replicated experimental population data, and the output is an ordered concatenation of Sanger scaffolds into superscaffolds. 
 
-Specifically, the draft genome sequence for *T. urticae* can be downloaded as described in [Grbic *et. al.* (2011)](https://www.nature.com/articles/nature10640). Name the Fasta file `T_urticae_2009.09.28.fasta` to be called by 'master_script.sh'. The VCF file can be dowloaded from the [preprint](https://doi.org/10.1101/474064) that describes the study for which this software was developed. Name VCF file `File_S1.vcf`. A file that includes potential misassemblies in the draft Sanger assembly of *T. urticae* is provided in this repository (`sangerbreaks.txt`). Please see the [preprint](https://doi.org/10.1101/474064) for additional information. 
+Specifically, the draft genome sequence for *T. urticae* can be downloaded as described in [Grbic *et. al.* (2011)](https://www.nature.com/articles/nature10640). Name the Fasta file `T_urticae_2009.09.28.fasta`. The VCF file can be dowloaded from the [preprint](https://doi.org/10.1101/474064) that describes the study for which this software was developed. Name VCF file `File_S1.vcf`. A file that includes potential misassemblies in the draft Sanger assembly of *T. urticae* is provided in this repository (`sangerbreaks.txt`). Please see the [preprint](https://doi.org/10.1101/474064) for additional information. 
 
 ```
 cd Desktop/AWD-master/
