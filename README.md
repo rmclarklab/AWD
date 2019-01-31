@@ -10,7 +10,7 @@ An overview about the AWD method and its use for consolidating draft genome asse
 
 For the data sets needed to test installation, and to replicate Table S4 of Wybouw et al. (2019), please contact Richard Clark (richard.m.clark@utah.edu). The data sets used as input will be available for public download as soon as the manuscript is accepted and appears online.
 
-The assembler.py program was written by Olivia Kosterlitz. She is currently a graduate student at the University of Washington (livkost@uw.edu). Please contact either Olivia Kosterlitz or Richard Clark (University of Utah, richard.m.clark@utah.edu) with questions about the software.
+The AWD programs was written by Olivia Kosterlitz. She is currently a graduate student at the University of Washington (livkost@uw.edu). Please contact either Olivia Kosterlitz or Richard Clark (University of Utah, richard.m.clark@utah.edu) with questions about the software.
 
 ---
 
@@ -26,7 +26,7 @@ Download and make the resulting folder the working directory. In addition to the
 
 The code was designed for and validated with draft Sanger genome sequence of the two-spotted spider mite (*Tetranychus urticae*) and replicated experimental population data, and the output is an ordered concatenation of Sanger scaffolds into superscaffolds. 
 
-Specifically, the draft genome sequence for *T. urticae* can be downloaded as described in [Grbic *et. al.* (2011)](https://www.nature.com/articles/nature10640). The VCF file can be dowloaded from the [preprint](https://doi.org/10.1101/474064) that describes the study for which this software was developed. A file that includes potential misassemblies in the draft Sanger assembly of *T. urticae* is provided in this repository (`sangerbreaks.txt`). Please see the [preprint](https://doi.org/10.1101/474064) for additional information. 
+Specifically, the draft genome sequence for *T. urticae* can be downloaded as described in [Grbic *et. al.* (2011)](https://www.nature.com/articles/nature10640). Name the Fasta file 'T_urticae_2009.09.28.fasta' to be called by 'master_script.sh'. The VCF file can be dowloaded from the [preprint](https://doi.org/10.1101/474064) that describes the study for which this software was developed. Name VCF file 'File_S1.vcf'. A file that includes potential misassemblies in the draft Sanger assembly of *T. urticae* is provided in this repository (`sangerbreaks.txt`). Please see the [preprint](https://doi.org/10.1101/474064) for additional information. 
 
 ```
 cd Desktop/AWD-master/
@@ -57,7 +57,7 @@ The script requires the following inputs:
 - -v / --vcf: VCF file intended to transform the scaffold and SNP position. 
 Here's an example using the *T.urticae* data. 
 ```
-python2 coordinate_code.py -f T_urticae_2009.09.28.fasta -i sangerbreaks.txt -v Tomato_Spirodiclofen_Joint.3.6-0-g89b7209.vcf
+python2 coordinate_code.py -f T_urticae_2009.09.28.fasta -i sangerbreaks.txt -v File_S1.vcf
 ```
 
 #### Calculate allele frequencies at terminal scaffold ends
