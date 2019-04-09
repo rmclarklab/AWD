@@ -2,7 +2,7 @@
 
 This collection of Python programs links genomic scaffolds in draft genome sequences together to form superscaffolds using the average window distance (AWD) metric. This metric, and its use for joining together scaffolds in the draft genome sequence of the two-spotted spider mite (*Tetranychus urticae*) to produce three pseudochromosomes, is described in the following publication:
 
-- Wybouw, N., Kosterlitz, O., Kurlovs, A. H., Bajda, S., Greenhalgh, R., Snoeck, S., Bui, H., Bryon, A., Dermauw, W., Van Leeuwen, T., and Clark, R. M. 2019. Long-term population studies uncover the genome structure and genetic basis of xenobiotic and host plant adaptation in the herbivore *Tetranychus urticae*. Under review (for a preprint, see bioRxiv 474064; doi: https://doi.org/10.1101/474064)
+- Wybouw, N., Kosterlitz, O., Kurlovs, A. H., Bajda, S., Greenhalgh, R., Snoeck, S., Bui, H., Bryon, A., Dermauw, W., Van Leeuwen, T., and Clark, R. M. Long-Term Population Studies Uncover the Genome Structure and Genetic Basis of Xenobiotic and Host Plant Adaptation in the Herbivore Tetranychus urticae. Genetics 211, 1409–1427 (2019). (doi: https://doi.org/10.1534/genetics.118.301803)
 
 The collection of programs, and associated documentation, used to produce Table S4 and Table S5 in Wyboux et al. (2019) are provided (the instructions for how to use the software to generate Table S4 is given below). Although the programs were written for and tested on draft genome sequences from *T. urticae*, in concert with population allele frequency data generated as part of the Wybouw et al. (2019) study, they were designed to work for related genome projects for which comparable data sets and input files are available.
 
